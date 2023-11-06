@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "legacylastserverbutton",
+  "version": "${version}",
+  "name": "Example Mod",
+  "description": "Add a button to the title to join the last server connected to.",
+  "authors": [
+    "Necnion8"
+  ],
+  "contact": {
+    "sources": "https://github.com/Necnion8/Legacy-LastServerButton",
+    "homepage": "https://github.com/Necnion8/Legacy-LastServerButton"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.gmail.necnionch.mymod.legacylastserverbutton.LastServerButtonMod"
+    ]
+  },
+  "mixins": [
+    "legacylastserverbutton.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": ">=1.8 <=1.12.2"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
